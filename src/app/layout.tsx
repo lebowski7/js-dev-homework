@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 import StyledComponentsRegistry from "../lib/AntdRegistry";
 
 export const metadata: Metadata = {
-  title: "JS dev homework",
+  title: "SPA with Charts",
   description:
     "Single web application that consumes data from remote API and renders pulled data in charts",
 };

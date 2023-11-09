@@ -1,14 +1,19 @@
+"use client";
 import React from "react";
-import { Button, ConfigProvider } from "antd";
-
+import { ConfigProvider, Layout } from "antd";
 import theme from "./theme/themeConfig";
+import { Head } from "@/app/components/Head";
+import { MainContent } from "@/app/components/MainContent";
 
-const HomePage = () => (
+const App = () => (
   <ConfigProvider theme={theme}>
     <div className="App">
-      <Button type="primary">Button</Button>
+      <Layout>
+        <Head />
+        <MainContent>Content</MainContent>
+      </Layout>
     </div>
   </ConfigProvider>
 );
 
-export default HomePage;
+export default App;
